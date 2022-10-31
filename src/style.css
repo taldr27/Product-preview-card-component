@@ -113,10 +113,10 @@ main {
 }
 
 .attribution {
-  position: absolute;
+  position: relative;
   font-size: 0.75rem;
   text-align: center;
-  bottom: 1em;
+  bottom: -1em;
 }
 
 .attribution a {
