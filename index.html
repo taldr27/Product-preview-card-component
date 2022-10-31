@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">  
+<title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 <body>
 
@@ -29,12 +30,25 @@
   Add to Cart -->
 
   <main>
-    
-  </main>
-  
+    <div class="card-mobile">
+      <img class="img-mobile" src="imgs/image-product-mobile.jpg" alt="">
+      <img class="img-desktop" src="imgs/image-product-desktop.jpg" alt="">
+      <div class="text">
+        <span>P E R F U M E</span>
+        <h2>Gabrielle Essence Eau De Parfum</h2>
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+          <div class="prices">
+            <span>$149.99</span> <span>$169.99</span>
+          </div>
+        <button class="btn-cart"><img src="imgs/icon-cart.svg" alt="cart-imgae">Add to Cart</button>
+      </div>
+    </div>
+      
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Diego Garcia</a>.
   </footer>
+  </main>
 </body>
 </html>
