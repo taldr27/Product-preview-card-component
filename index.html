@@ -31,21 +31,23 @@
 
   <main>
     <div class="card-mobile">
-      <img class="img-mobile" src="imgs/image-product-mobile.jpg" alt="">
-      <img class="img-desktop" src="imgs/image-product-desktop.jpg" alt="">
+      <picture>
+        <source media="(min-width: 700px)" srcset="imgs/image-product-desktop.jpg" class="img-desktop">
+        <img class="img-mobile" src="imgs/image-product-mobile.jpg" alt="product-image">
+      </picture>
       <div class="text">
         <span>P E R F U M E</span>
-        <h2>Gabrielle Essence Eau De Parfum</h2>
+        <h3>Gabrielle Essence Eau De Parfum</h3>
         <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
           Perfumer-Creator for the House of CHANEL.</p>
           <div class="prices">
-            <span>$149.99</span> <span>$169.99</span>
+            <span>$149.99</span> <del><span class="sr-only">$169.99</span></del>
           </div>
-        <button class="btn-cart"><img src="imgs/icon-cart.svg" alt="cart-imgae">Add to Cart</button>
+        <button class="btn-cart"><img src="imgs/icon-cart.svg" alt="btn-add-cart">Add to Cart</button>
       </div>
     </div>
     <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
       Coded by <a href="#">Diego Garcia</a>.
     </footer>
   </main>
