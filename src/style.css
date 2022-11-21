@@ -41,6 +41,7 @@ main {
   min-width: 1em;
   background-color: var(--clr-neutral-White);
   border-radius: 1em;
+  object-fit: cover;
 }
 
 .img-mobile {
@@ -124,15 +125,17 @@ main {
 }
 
 @media only screen and (min-width: 700px) {
-  .img-mobile {
-    display: none;
-  }
 
-  .img-desktop {
+  .img-mobile {
     display: block;
-    max-width: 20em;
+    max-width: 18em;
+    object-fit: cover;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: auto;
+    object-fit: cover;
   }
 
   .card-mobile {
